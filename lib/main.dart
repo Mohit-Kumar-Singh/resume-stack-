@@ -185,7 +185,7 @@ class Resume extends StatelessWidget {
                             style: TextStyle(fontStyle: FontStyle.italic),
                           ),
                           Text(
-                            '2nd Year/AKGEC',
+                            '2 nd Year/AKGEC',
                             style: TextStyle(fontStyle: FontStyle.italic),
                           ),
                           SizedBox(
