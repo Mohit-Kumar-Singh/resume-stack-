@@ -215,6 +215,15 @@ class Resume extends StatelessWidget {
                         ],
                       ),
                       decoration: BoxDecoration(
+                          // boxShadow: [
+                          //   BoxShadow(
+                          //     color: Colors.white.withOpacity(.4),
+                          //     spreadRadius: 5,
+                          //     blurRadius: 7,
+                          //     offset:
+                          //         Offset(-3, -9), // changes position of shadow
+                          //   ),
+                          // ],
                           color: Colors.white,
                           borderRadius: BorderRadius.all(Radius.circular(34))),
                       height: MediaQuery.of(context).size.height * .65,
