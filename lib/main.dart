@@ -60,6 +60,7 @@ class Resume extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
     return SafeArea(
       child: Scaffold(
@@ -93,7 +94,7 @@ class Resume extends StatelessWidget {
                           heading('MOHIT KUMAR SINGH ', 20, Colors.white, 2, 40,
                               40),
                           Text(
-                            'Contaus Trainee',
+                            'Conatus Trainee',
                             style: TextStyle(color: Colors.white),
                           )
                         ],
@@ -137,30 +138,10 @@ class Resume extends StatelessWidget {
                         children: [
                           heading('ABOUT ME', height * 0.035, Colors.black, 1,
                               50, 0),
-                          Center(
-                            // color: Colors.white,
-                            child: Text(
-                              'Responsible and ambitious student with excellent time management. Aiming to use knowledge and resources to combine technology with Creativity / Art . Possess proper Communication skills and strong work ethics that will aid our team in meeting its future  milestones',
-                            ),
-                            // child: RichText(
-                            //   text: TextSpan(
-                            //       text: 'R ',
-                            //       style: TextStyle(
-                            //         fontFamily: 'PlayFair',
-                            //         color: Colors.black,
-                            //         //fontSize: 20
-                            //         fontSize: height * 0.037,
-                            //       ),
-                            //       children: [
-                            //         TextSpan(
-                            //             text:
-                            //                 'esponsible and ambitious student with excellent time management. Aiming to use knowledge and resources to combine technology with Creativity / Art . Possess proper Communication skills and strong work ethics that will aid our team in meeting its future  milestones.',
-                            //             style: TextStyle(
-                            //                 fontSize: height * 0.019,
-                            //                 color: Colors.black,
-                            //                 fontFamily: 'j'))
-                            //       ]),
-                            // ),
+                          Text(
+                            'Responsible and ambitious student with excellent time management. Aiming to use knowledge and resources to combine technology with creativity / art . Possess proper communication skills and strong work ethics that will aid our team in meeting its future milestones',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(fontSize: width * .037),
                           ),
                           SizedBox(
                             height: height * 0.02,
@@ -171,18 +152,20 @@ class Resume extends StatelessWidget {
                             'Bachelor of Technology,',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              fontSize: height * 0.026,
+                              fontSize: width * .05,
                             ),
                           ),
                           Text(
                             ' Computer Science',
-                            style: TextStyle(fontStyle: FontStyle.italic),
+                            style: TextStyle(
+                              fontStyle: FontStyle.italic,
+                            ),
                           ),
                           Text(
                             '2 nd Year/AKGEC',
                             style: TextStyle(
                               fontStyle: FontStyle.italic,
-                              fontSize: height * 0.022,
+                              //fontSize: height * 0.022,
                             ),
                           ),
                           SizedBox(
@@ -192,7 +175,7 @@ class Resume extends StatelessWidget {
                             '12th ,  93.2% PCM',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              fontSize: height * 0.026,
+                              fontSize: width * .05,
                             ),
                           ),
                           Text(
@@ -200,14 +183,14 @@ class Resume extends StatelessWidget {
                             style: TextStyle(
                               //fontFamily: 'PlayFair',
                               fontStyle: FontStyle.italic,
-                              fontSize: height * 0.022,
+                              // fontSize: height * 0.022,
                             ),
                           ),
                           Text(
                             ' Badaun, U.P',
                             style: TextStyle(
                               fontStyle: FontStyle.italic,
-                              fontSize: height * 0.022,
+                              // fontSize: height * 0.022,
                             ),
                           ),
                         ],
@@ -225,7 +208,7 @@ class Resume extends StatelessWidget {
                           color: Colors.white,
                           borderRadius: BorderRadius.all(Radius.circular(34))),
                       height: height * .65,
-                      width: MediaQuery.of(context).size.width * .62,
+                      width: width * .62,
                     ))
               ],
             ),
