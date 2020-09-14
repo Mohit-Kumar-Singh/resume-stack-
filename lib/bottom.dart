@@ -33,59 +33,57 @@ class Bottom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height * .15,
-      decoration: BoxDecoration(
-        color: Colors.black,
-      ),
+      height: MediaQuery.of(context).size.height * .16,
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(4.0),
             child: Text(
               'G E T    I N    T O U C H ',
               style: TextStyle(
-                fontFamily: 'PlayFair',
-                color: Colors.white,
-                fontSize: 18,
-              ),
+                  fontFamily: 'PlayFair',
+                  color: Colors.white,
+                  fontSize: MediaQuery.of(context).size.height * .028),
             ),
           ),
           Divider(
-            thickness: 2,
+            thickness: 0,
             color: Colors.white,
-            indent: 10,
-            endIndent: 10,
+            indent: 15,
+            endIndent: 15,
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              FlatButton(
+              IconButton(
                   onPressed: () => _launchUrl(
                       'https://instagram.com/mohit_kumar_singh?igshid=a7p8i0f07u98'),
-                  child: Icon(
+                  icon: Icon(
                     MdiIcons.instagram,
                     color: Colors.white,
                   )),
-              FlatButton(
+              IconButton(
                 onPressed: () => _launchCall(8527172366),
-                child: Icon(
+                icon: Icon(
                   Icons.call,
                   color: Colors.white,
                 ),
               ),
-              FlatButton(
+              IconButton(
                   onPressed: () => _launchUrl(
                       'https://www.linkedin.com/in/mohit-kumar-singh-mks'),
-                  child: Icon(
+                  icon: Icon(
                     MdiIcons.linkedin,
                     color: Colors.white,
                   )),
-              FlatButton(
-                onPressed: () => _launchEmail('mks61201625@gmailcom'),
-                child: Icon(
-                  Icons.mail,
-                  color: Colors.white,
-                ),
-              ),
+              //
+              IconButton(
+                  color: Colors.blue,
+                  icon: Icon(
+                    Icons.mail,
+                    color: Colors.white,
+                  ),
+                  onPressed: () => _launchEmail('mks61201625@gmailcom'))
             ],
           ),
         ],

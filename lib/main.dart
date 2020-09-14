@@ -10,11 +10,6 @@ void main() {
 }
 
 class Resume extends StatelessWidget {
-  // final Widget bullet = Icon(
-  //   Icons.chevron_right,
-  //   color: Colors.white,
-  //   size: 13,
-  // );
   Widget heading(
       text, double fsize, color, double thick, double ind, double end) {
     return Column(
@@ -24,7 +19,6 @@ class Resume extends StatelessWidget {
           style: TextStyle(
             fontSize: fsize,
             fontFamily: 'PlayFair',
-            // fontWeight: FontWeight.bold,
             color: color,
           ),
         ),
@@ -79,10 +73,7 @@ class Resume extends StatelessWidget {
                   left: 0,
                   top: 0,
                   child: Container(
-                    //height: MediaQuery.of(context).size.height * .34,
-                    // width: MediaQuery.of(context).size.width * .34,
                     padding: EdgeInsets.all(2),
-
                     decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         border: Border.all(width: 1, color: Colors.white)),
@@ -97,7 +88,6 @@ class Resume extends StatelessWidget {
                     top: 0,
                     child: Container(
                       child: Column(
-                        // crossAxisAlignment: CrossAxisAlignment.end,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           heading('MOHIT KUMAR SINGH ', 20, Colors.white, 2, 40,
@@ -134,7 +124,6 @@ class Resume extends StatelessWidget {
                           customText('Movies/Series'),
                         ],
                       ),
-                      //color: Colors.white,
                       height: MediaQuery.of(context).size.height * .60,
                       width: MediaQuery.of(context).size.width * .36,
                     )),
@@ -142,42 +131,47 @@ class Resume extends StatelessWidget {
                     bottom: 0,
                     right: 0,
                     child: Container(
-                      padding: EdgeInsets.all(4),
+                      padding: EdgeInsets.all(6),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.end,
-                        //mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          // SizedBox(
-                          //   width: 20,
-                          // ),
-                          heading('ABOUT ME', 20, Colors.black, 1, 50, 0),
-                          RichText(
-                            text: TextSpan(
-                                text: 'R ',
-                                style: TextStyle(
-                                  fontFamily: 'PlayFair',
-                                  color: Colors.black,
-                                  fontSize: 25,
-                                ),
-                                children: [
-                                  TextSpan(
-                                      text:
-                                          'esponsible and ambitious student with excellent time management. Aiming to use knowledge and resources to combine technology with Creativity / Art . Possess proper Communication skills and strong work ethics that will aid our team in meeting its future  milestones.',
-                                      style: TextStyle(
-                                          fontSize: 15,
-                                          color: Colors.black,
-                                          fontFamily: 'j'))
-                                ]),
+                          heading('ABOUT ME', height * 0.035, Colors.black, 1,
+                              50, 0),
+                          Center(
+                            // color: Colors.white,
+                            child: Text(
+                              'Responsible and ambitious student with excellent time management. Aiming to use knowledge and resources to combine technology with Creativity / Art . Possess proper Communication skills and strong work ethics that will aid our team in meeting its future  milestones',
+                            ),
+                            // child: RichText(
+                            //   text: TextSpan(
+                            //       text: 'R ',
+                            //       style: TextStyle(
+                            //         fontFamily: 'PlayFair',
+                            //         color: Colors.black,
+                            //         //fontSize: 20
+                            //         fontSize: height * 0.037,
+                            //       ),
+                            //       children: [
+                            //         TextSpan(
+                            //             text:
+                            //                 'esponsible and ambitious student with excellent time management. Aiming to use knowledge and resources to combine technology with Creativity / Art . Possess proper Communication skills and strong work ethics that will aid our team in meeting its future  milestones.',
+                            //             style: TextStyle(
+                            //                 fontSize: height * 0.019,
+                            //                 color: Colors.black,
+                            //                 fontFamily: 'j'))
+                            //       ]),
+                            // ),
                           ),
                           SizedBox(
-                            height: 30,
+                            height: height * 0.02,
                           ),
-                          heading('EDUCATION', 20, Colors.black, 1, 40, 0),
+                          heading('EDUCATION', height * 0.035, Colors.black, 1,
+                              40, 0),
                           Text(
                             'Bachelor of Technology,',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              fontSize: 16,
+                              fontSize: height * 0.026,
                             ),
                           ),
                           Text(
@@ -186,16 +180,19 @@ class Resume extends StatelessWidget {
                           ),
                           Text(
                             '2 nd Year/AKGEC',
-                            style: TextStyle(fontStyle: FontStyle.italic),
+                            style: TextStyle(
+                              fontStyle: FontStyle.italic,
+                              fontSize: height * 0.022,
+                            ),
                           ),
                           SizedBox(
-                            height: 10,
+                            height: height * 0.01,
                           ),
                           Text(
                             '12th ,  93.2% PCM',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              fontSize: 16,
+                              fontSize: height * 0.026,
                             ),
                           ),
                           Text(
@@ -203,13 +200,14 @@ class Resume extends StatelessWidget {
                             style: TextStyle(
                               //fontFamily: 'PlayFair',
                               fontStyle: FontStyle.italic,
-                              fontSize: 14,
+                              fontSize: height * 0.022,
                             ),
                           ),
                           Text(
                             ' Badaun, U.P',
                             style: TextStyle(
                               fontStyle: FontStyle.italic,
+                              fontSize: height * 0.022,
                             ),
                           ),
                         ],
@@ -226,7 +224,7 @@ class Resume extends StatelessWidget {
                           // ],
                           color: Colors.white,
                           borderRadius: BorderRadius.all(Radius.circular(34))),
-                      height: MediaQuery.of(context).size.height * .65,
+                      height: height * .65,
                       width: MediaQuery.of(context).size.width * .62,
                     ))
               ],
